@@ -1,0 +1,54 @@
+{
+  "name": "amayzmeapi",
+  "version": "1.0.0",
+  "description": "Amayzme NodeJS API",
+  "author": "Quang Pham",
+  "license": "ISC",
+  "engines": {
+    "node": "5.8.0"
+  },
+  "homepage": "https://github.com/amanbirdi/amayzmeapi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amanbirdi/amayzmeapi"
+  },
+  "bugs": {
+    "url": "https://github.com/amanbirdi/amayzmeapi/issues"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "./node_modules/mocha/bin/mocha server.test.js"
+  },
+  "private": true,
+  "dependencies": {
+    "async": "^2.0.0-rc.5",
+    "aws-sdk": "^2.4.7",
+    "bcrypt": "^0.8.7",
+    "body-parser": "1.9.2",
+    "cors": "^2.7.1",
+    "csv-parse": "^1.1.7",
+    "express": "~4.0.0",
+    "express-session": "^1.14.0",
+    "fs": "0.0.1-security",
+    "jimp": "^0.2.27",
+    "js-beautify": "^1.6.2",
+    "jsonwebtoken": "^7.2.1",
+    "mongodb": "^1.4.40",
+    "mongoskin": "^1.4.1",
+    "morgan": "^1.7.0",
+    "multer": "^1.1.0",
+    "node-geocoder": "^3.15.0",
+    "nodemailer": "^2.4.2",
+    "password-hash": "^1.2.2",
+    "request": "^2.73.0",
+    "swagger-jsdoc": "^1.8.4",
+    "underscore": "^1.8.3",
+    "uuid": "^2.0.2"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "superagent": "^1.8.3",
+    "mocha": "2.0.1"
+  }
+}

@@ -1,1 +1,2 @@
-# quotebl
+# amayzmeapi
+API for amayzme website
