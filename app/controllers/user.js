@@ -18,7 +18,8 @@ var pFacebookLogin = function(req, res){
         error: err ? err : null
       });
     } else{
-      mUser.addFB(user, function(err, response){
+      mUser.addFB(user, function(err, response) {
+        console.log ("Testing");
         processor.render(req, res, {
           result: response && !err ? response : null,
           error: err ? err : null

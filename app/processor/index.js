@@ -1,9 +1,7 @@
 'use strict';
 
-var json = require('./json'),
-  html = require('./html');
+var json = require('./json');
 
 exports = module.exports = {
-  json: json,
-  html: html
+  json: json
 };

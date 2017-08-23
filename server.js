@@ -1,8 +1,5 @@
 var express = require('express'),
-  mongoskin = require('mongoskin'),
   bodyParser = require('body-parser'),
-  session = require('express-session'),
-  multer = require('multer'),
   swaggerJSDoc = require('swagger-jsdoc'),
   logger = require('morgan');
 var cors = require('cors');
@@ -18,13 +15,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static('doc'));
 app.use('/docs', express.static('doc'));
-
-app.use(session({
-  secret: 'secret',
-  resave: false,
-  saveUninitialized: false,
-  cookie: { maxAge: 48*60*60*1000 }
-}));
 
 app.use(logger('dev'));
 

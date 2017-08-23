@@ -36,10 +36,13 @@ var pAddFacebook = function(options, callback) {
   var collection = dbInstance.collection("users");
   collection.insert(data, function(err, results) {
     if (err) {
+      console.log("cai j vay", err);
       return cb("Please try again! Error insert new user");
     } else if (results && results.length) {
+      console.log("cai j vay ss");
       return cb(null, results[0]);
     } else {
+      console.log("cai j vay ssava");
       return cb('Create user error');
     }
   });
