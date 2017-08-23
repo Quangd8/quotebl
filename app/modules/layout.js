@@ -15,14 +15,14 @@ var createLayout = function(options, callback) {
   }
   var data = {
     name: opts.name.trim(),
-    data: opts.layout
+    data: opts.layout,
+    updated: new Date()
   }
   var collection = dbInstance.collection("public_layouts");
   collection.insert(data, function(err, results) {
     if (err) {
       return cb("Please try again! Error insert new user");
     } else if (results && results.length) {
-      console.log("cai j vay ss");
       return cb(null, results[0]);
     } else {
       console.log("cai j vay ssava");
